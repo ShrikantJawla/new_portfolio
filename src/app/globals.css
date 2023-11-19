@@ -29,3 +29,20 @@ body {
 .clip_path_visible {
   clip-path: circle(1200px at 110% -10%);
 }
+
+.scroll_div {
+  /* animation: scroll 4s linear infinite; */
+}
+
+.scroll_div:hover {
+  /* animation-play-state: paused; */
+}
+
+@keyframes scroll {
+  0%{
+    transform: translate(0);
+  }
+  100%{
+    transform:translate(calc(-56px*14))
+  }
+}
