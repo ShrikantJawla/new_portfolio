@@ -5,12 +5,13 @@ import paintBrushLine from "@/assets/svg/lineUnderTitle.svg";
 import paintBrush from "@/assets/Images/paint-brush 1.png";
 import angleBr from "@/assets/Images/codeAnglesB.png";
 import bagIcon from "@/assets/Images/bagIcone.png";
+import LeftIllus from "@/assets/Images/astronoat illus.png";
 
 type Props = {};
 
 const HomeSection = (props: Props) => {
   return (
-    <div className="min-h-[418px] w-full bg-[--theme_purple] px-[15px] md:px-[25px] lg:px-[40px] xl:px-[115px] py-[10px] md:py-[20px] rounded-[--section_br_radius] flex flex-col md:flex-row justify-between items-center">
+    <div className="min-h-[418px] w-full bg-[--theme_purple] px-[15px] md:px-[25px] lg:px-[25px] xl:px-[85px] 2xl:px-[135px] py-[10px] md:py-[20px] rounded-[--section_br_radius] flex flex-col md:flex-row justify-between items-center relative">
       {/* Profile Image */}
       <div className="w-full lg:w-[360px] flex justify-center">
         <Image
@@ -20,7 +21,7 @@ const HomeSection = (props: Props) => {
         />
       </div>
       {/* Text section */}
-      <div className="h-[310px] md:h-[418px] sm:w-[500px] md:w-[500px] lg:w-[605px] flex flex-col justify-center items-center md:items-start">
+      <div className="h-[310px] md:h-[418px] sm:w-[500px] md:w-[500px] lg:w-[520px] flex flex-col justify-center items-center md:items-start ">
         <p className="font-spaceGrotesk font-500 text-[15px] md:text-[22px] text-[#FFFFFF] px-[100px]">
           Hi, I am
         </p>
@@ -37,7 +38,7 @@ const HomeSection = (props: Props) => {
             />
           </div>
         </div>
-        <div className="flex mt-2 gap-2 w-full md:w-[400px] lg:w-[604px]">
+        <div className="flex mt-2 gap-2 w-full md:w-[400px] lg:w-[520px] xl:w-full">
           <h2 className="font-400 text-[12px] lg:text-[16px] leading-[15px] lg:leading-[20px] text-white">
             <span className="inline-flex lg:h-[22px] justify-center items-center mr-1 relative top-[-5px]">
               <p className="w-[35px] h-[0.8px] bg-white"></p>
@@ -72,6 +73,14 @@ const HomeSection = (props: Props) => {
             </p>
           </div>
         </div>
+      </div>
+      {/* Left side Illus */}
+      <div>
+        <Image
+          src={LeftIllus}
+          alt="Astronus illus"
+          className="absolute left-0 bottom-0 animate-bounce"
+        />
       </div>
     </div>
   );
