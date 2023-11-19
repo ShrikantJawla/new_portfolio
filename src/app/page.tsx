@@ -1,5 +1,6 @@
 import HomeSection from "@/components/HomeSection";
 import Navbar from "@/components/Navbar";
+import SkillsSection from "@/components/SkillsSection";
 
 export default function Home() {
   return (
@@ -7,6 +8,11 @@ export default function Home() {
       <section className="w-full min-h-[100vh] flex flex-col gap-[60px]">
         <Navbar />
         <HomeSection />
+        {/* Divider */}
+        <div className="w-full flex justify-center items-center">
+          <div className="w-[85%] h-[1px] bg-[#777777]"></div>
+        </div>
+        <SkillsSection />
       </section>
     </main>
   );

@@ -27,7 +27,7 @@ const HomeSection = (props: Props) => {
           Hi, I am
         </p>
         <div className="flex flex-col">
-          <h1 className="text-[29.5px] lg:text-[56px] font-700 font-spaceGrotesk text-[#FFFFFF] mt-[-8px] leading-[71.46px] tracking-tighter">
+          <h1 className="text-[29.5px] lg:text-[56px] font-[700] font-spaceGrotesk text-[#FFFFFF] mt-[-8px] leading-[71.46px] tracking-tighter">
             Shrikant Jawla !
           </h1>
           <div className="flex mt-[-20px] self-end justify-end w-[230px] lg:w-[410px]">
@@ -50,7 +50,7 @@ const HomeSection = (props: Props) => {
           </h2>
         </div>
         <div className="w-full md:w-[400px] lg:w-[604px] mt-[25px]">
-          <p className="font-700 text-[14px] lg:text-[18px] text-white">
+          <p className="font-[700] text-[14px] lg:text-[18px] text-white">
             QUICK INTRO
           </p>
           <div className="flex justify-start items-start gap-2 lg:mt-4">
@@ -88,9 +88,10 @@ const HomeSection = (props: Props) => {
         <Image
           src={RightSideIllus}
           alt="Astronus illus"
-          className="absolute right-0 bottom-0 animate-bounce w-[70px] md:w-auto"
+          className="absolute right-0 bottom-8 md:bottom-12 animate-bounce w-[70px] md:w-auto"
         />
       </div>
+      
     </div>
   );
 };

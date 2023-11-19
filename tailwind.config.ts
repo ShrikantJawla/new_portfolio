@@ -10,6 +10,7 @@ const config: Config = {
     extend: {},
     fontFamily: {
       spaceGrotesk: ["Space Grotesk", "sans-serif"],
+      syne: ["Syne", "sans-serif"],
     },
   },
   plugins: [],
