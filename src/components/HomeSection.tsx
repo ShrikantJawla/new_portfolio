@@ -6,12 +6,13 @@ import paintBrush from "@/assets/Images/paint-brush 1.png";
 import angleBr from "@/assets/Images/codeAnglesB.png";
 import bagIcon from "@/assets/Images/bagIcone.png";
 import LeftIllus from "@/assets/Images/astronoat illus.png";
+import RightSideIllus from "@/assets/Images/Happy Pilot  3D Illustration.png";
 
 type Props = {};
 
 const HomeSection = (props: Props) => {
   return (
-    <div className="min-h-[418px] w-full bg-[--theme_purple] px-[15px] md:px-[25px] lg:px-[25px] xl:px-[85px] 2xl:px-[135px] py-[10px] md:py-[20px] rounded-[--section_br_radius] flex flex-col md:flex-row justify-between items-center relative">
+    <div className="min-h-[418px] w-full bg-[--theme_purple] px-[15px] md:px-[25px] lg:px-[25px] xl:px-[85px] 2xl:px-[135px] py-[10px] md:py-[20px] rounded-[--section_br_radius] flex flex-col md:flex-row justify-between items-center relative pb-16 md:pb-1">
       {/* Profile Image */}
       <div className="w-full lg:w-[360px] flex justify-center">
         <Image
@@ -79,7 +80,15 @@ const HomeSection = (props: Props) => {
         <Image
           src={LeftIllus}
           alt="Astronus illus"
-          className="absolute left-0 bottom-0 animate-bounce"
+          className="absolute left-0 bottom-0 animate-bounce w-[70px] md:w-auto"
+        />
+      </div>
+      {/* Right side Illus */}
+      <div>
+        <Image
+          src={RightSideIllus}
+          alt="Astronus illus"
+          className="absolute right-0 bottom-0 animate-bounce w-[70px] md:w-auto"
         />
       </div>
     </div>
