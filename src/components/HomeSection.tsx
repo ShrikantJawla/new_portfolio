@@ -39,7 +39,7 @@ const HomeSection = (props: Props) => {
             />
           </div>
         </div>
-        <div className="flex mt-2 gap-2 w-full md:w-[400px] lg:w-[520px] xl:w-full">
+        <div className="flex mt-2 gap-2 w-full md:w-[400px] lg:w-[520px] xl:w-full text-center md:text-left">
           <h2 className="font-400 text-[12px] lg:text-[16px] leading-[15px] lg:leading-[20px] text-white">
             <span className="inline-flex lg:h-[22px] justify-center items-center mr-1 relative top-[-5px]">
               <p className="w-[35px] h-[0.8px] bg-white"></p>
