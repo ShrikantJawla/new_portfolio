@@ -23,7 +23,7 @@ export default function Home() {
           <SkillsSection />
         </section>
         {/* Project section */}
-        <section className="section_common_padding bg-[#f9f9f9]">
+        <section className="section_common_padding dark:bg-black light:bg-[#f9f9f9] ">
           <div className="w-full max-w-[1600px] px-[44px]">
             <ProjectSection />
           </div>
