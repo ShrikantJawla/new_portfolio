@@ -43,7 +43,7 @@ const SkillsSection = (props: Props) => {
   return (
     <div className="w-full min-h-fit pb-5">
       <HeaderSection title="SkillsSet" child={<SkillsBtns />} />
-      <div className="w-full min-h-[100px] grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 mt-4 gap-5 md:px-3">
+      <div className="w-full min-h-[100px] grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 mt-8 gap-5 md:px-3">
         {skilsArray.map((ele, ind) => (
           <div
             key={ind}
@@ -54,7 +54,7 @@ const SkillsSection = (props: Props) => {
               alt={ele.title}
               className="group-hover:blur-[2px]"
             />
-            <p className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] transition-all duration-500 ease-in-out hidden group-hover:flex text-[15px] md:text-[19px] font-bold text-center">
+            <p className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] transition-all duration-500 ease-in-out hidden group-hover:flex text-[14px] md:text-[19px] font-bold text-center dark:text-white">
               {ele.title}
             </p>
           </div>
