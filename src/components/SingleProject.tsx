@@ -28,7 +28,7 @@ const SingleProject = (props: Props) => {
         props.isReverse ? "lg:flex-row-reverse" : "lg:flex-row"
       } gap-1 md:gap-16  ${
         props.isReverse ? "lg:justify-end" : "lg:justify-start"
-      } items-center `}
+      } items-center dark:text-white`}
     >
       {/*Top Title section */}
       <div className="w-full flex justify-center font-spaceGrotesk md:hidden">
@@ -52,7 +52,7 @@ const SingleProject = (props: Props) => {
         </div>
         {/* Description section */}
         <div>
-          <p className="text-[#273653] text-[14px] md:text-[16px]">
+          <p className="dark:text-gray-300 text-[#273653] text-[14px] md:text-[16px]">
             <span className="inline-flex h-[1px] w-[60px] bg-black relative top-[-5px] mr-2"></span>
             &ldquo;Clone of a well-known website that let users to create, send
             andanalyze sophisticated survey template.&rdquo;
