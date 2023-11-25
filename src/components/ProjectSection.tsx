@@ -5,7 +5,7 @@ type Props = {};
 
 const ProjectSection = (props: Props) => {
   return (
-    <div className="w-full min-h-fit pb-5 bg-[#f9f9f9]">
+    <div className="w-full min-h-[60vh] pb-5">
       <HeaderSection title="Projects" />
     </div>
   );

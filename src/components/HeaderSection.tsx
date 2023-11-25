@@ -8,7 +8,7 @@ const HeaderSection = (props: Props) => {
   return (
     <div className="w-full min-h-[50px] flex flex-col gap-2 md:flex-row justify-between items-center">
       <div className="flex justify-center items-center gap-2">
-        <p className="font-[700] text-[30px] lg:text-[40px] leading-[48px] font-syne">
+        <p className="font-[700] text-[30px] lg:text-[36px] leading-[48px] font-syne text-black dark:text-white">
           {props.title}
         </p>
         <Image src={arrowIcon} alt="Arrow Icon" className="h-[22px]" />

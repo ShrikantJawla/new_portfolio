@@ -7,22 +7,29 @@ export default function Home() {
   return (
     <main className="w-[100vw] min-h-[100vh] dark:bg-[#000000] m-auto flex justify-center items-center ">
       <section className="w-full min-h-[100vh] flex flex-col gap-[60px] items-center">
-        <section className="section_common_padding">
+        <section className="section_common_padding max-w-[1600px]">
           <Navbar />
         </section>
-        <section className="section_common_padding">
+        {/* Home Section */}
+        <section className="section_common_padding max-w-[1600px]">
           <HomeSection />
         </section>
         {/* Divider */}
         <div className="w-full flex justify-center items-center">
           <div className="w-[85%] h-[1px] bg-[#777777]"></div>
         </div>
-        <section className="section_common_padding">
+        {/* Skills */}
+        <section className="section_common_padding max-w-[1600px]">
           <SkillsSection />
         </section>
+        {/* Project section */}
         <section className="section_common_padding bg-[#f9f9f9]">
-          <ProjectSection />
+          <div className="w-full max-w-[1600px] px-[44px]">
+            <ProjectSection />
+          </div>
         </section>
+        {/* Github Secion */}
+        <section></section>
       </section>
     </main>
   );

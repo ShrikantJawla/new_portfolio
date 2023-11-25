@@ -36,4 +36,4 @@ body {
     transform-style: preserve-3d;
 }
 
-.section_common_padding {@apply px-[16px] md:px-[40px] lg:px-[80px] xl:px-[140px] py-[10px] md:py-[24px] max-w-[1600px] w-full}
+.section_common_padding {@apply px-[16px] md:px-[40px] lg:px-[80px] xl:px-[140px] py-[10px] md:py-[24px] w-full}
