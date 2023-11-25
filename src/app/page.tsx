@@ -4,6 +4,7 @@ import HomeSection from "@/components/HomeSection";
 import Navbar from "@/components/Navbar";
 import ProjectSection from "@/components/ProjectSection";
 import SkillsSection from "@/components/SkillsSection";
+import SocialLinks from "@/components/SocialLinks";
 import StillHereTextSection from "@/components/StillHereTextSection";
 import dynamic from "next/dynamic";
 const GithubCalender = dynamic(() => import("@/components/GithubCalender"), {
@@ -59,6 +60,10 @@ export default function Home() {
         {/* Still here text Section */}
         <section className="section_common_padding max-w-[1600px]">
           <StillHereTextSection />
+        </section>
+        {/* Social links Section */}
+        <section className="section_common_padding max-w-[1600px]">
+          <SocialLinks />
         </section>
       </section>
     </main>

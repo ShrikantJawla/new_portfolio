@@ -7,6 +7,14 @@ import HamBurgerIcon from "@/assets/Images/icons8-hamburger.svg";
 import ThemeSwither from "./ThemeSwither";
 import closeIcon from "@/assets/Images/icons8-close.svg";
 
+const links = [
+  { title: "Skills", url: "__skills" },
+  { title: "Projects", url: "__projects" },
+  { title: "Stats", url: "__stats" },
+  { title: "Contact", url: "__contacts" },
+  { title: "Resume/CV", url: "__resume" },
+];
+
 type Props = {};
 
 const Navbar = (props: Props) => {
@@ -22,13 +30,7 @@ const Navbar = (props: Props) => {
           className=""
         />
       </a>
-      {[
-        { title: "Skills", url: "__skills" },
-        { title: "Projects", url: "__projects" },
-        { title: "Stats", url: "__stats" },
-        { title: "Contact", url: "__contacts" },
-        { title: "Resume/CV", url: "__resume" },
-      ].map((ele, ind) => (
+      {links.map((ele, ind) => (
         <a key={ind} className="group hidden lg:flex" href={`#${ele.url}`}>
           <p className="group text-[19px] font-[600] text-[#55505B] dark:text-white hover:scale-125 hover:text-[--theme_purple] hover:dark:text-[--theme_purple] transition-scale duration-300 transition-ease relative before:content-[''] before:absolute before:bottom-[-2px] before:height-[6px] before:w-[0] group-hover:before:w-full group-hover:before:border before:border-[--theme_purple] dark:before:border-white before:rounded-[50px] before:transition-width before:duration-[0.9s] before:transition-ease">
             {ele.title}
@@ -73,15 +75,15 @@ function SideBar({
         />
       </div>
       <div className="flex flex-col gap-4 mt-5">
-        {["Home", "Skills", "Projects", "Stats", "AboutUs"].map(
-          (ele, ind, arr) => (
-            <div className="group w-full px-16 py-2 " key={ind}>
+        {links.map((ele, ind, arr) => (
+          <div className="group w-full px-16 py-2 " key={ind}>
+            <a href={`#${ele.url}`}>
               <p className="group text-3xl font-[600] text-white cursor-pointer relative before:content-[''] before:w-0  group-hover:before:border before:h-[4px] before:bg-white before-b-white before:absolute before:bottom-[-4px] before:transition-w before:duration-700 before:ease-in-out group-hover:before:w-full">
-                {ele}
+                {ele.title}
               </p>
-            </div>
-          )
-        )}
+            </a>
+          </div>
+        ))}
       </div>
     </div>
   );
