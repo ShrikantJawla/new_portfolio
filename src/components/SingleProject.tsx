@@ -54,8 +54,8 @@ const SingleProject = (props: Props) => {
         <div>
           <p className="text-[#273653] text-[14px] md:text-[16px]">
             <span className="inline-flex h-[1px] w-[60px] bg-black relative top-[-5px] mr-2"></span>
-            Clone of a well-known website that let users to create, send
-            andanalyze sophisticated survey template.
+            &ldquo;Clone of a well-known website that let users to create, send
+            andanalyze sophisticated survey template.&rdquo;
           </p>
         </div>
         {/* Tech section */}
