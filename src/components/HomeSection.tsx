@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import MyImage from "@/assets/Images/myImg.png";
+import MyImage from "@/assets/Images/MyPhoto1.png";
 import paintBrushLine from "@/assets/svg/lineUnderTitle.svg";
 import paintBrush from "@/assets/Images/paint-brush 1.png";
 import angleBr from "@/assets/Images/codeAnglesB.png";
@@ -18,7 +18,7 @@ const HomeSection = (props: Props) => {
         <Image
           src={MyImage}
           alt="My Image"
-          className="w-[139px] sm:w-[180px] lg:w-[258px]"
+          className="w-[139px] sm:w-[180px] lg:w-[258px] rounded-xl"
         />
       </div>
       {/* Text section */}
@@ -91,7 +91,6 @@ const HomeSection = (props: Props) => {
           className="absolute right-0 bottom-8 md:bottom-12 animate-bounce w-[70px] md:w-auto"
         />
       </div>
-      
     </div>
   );
 };
