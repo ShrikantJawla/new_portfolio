@@ -28,9 +28,9 @@ const SingleProject = (props: Props) => {
         props.isReverse ? "lg:flex-row-reverse" : "lg:flex-row"
       } gap-1 md:gap-16  ${
         props.isReverse ? "lg:justify-end" : "lg:justify-start"
-      } items-center`}
+      } items-center `}
     >
-      {/* Title section */}
+      {/*Top Title section */}
       <div className="w-full flex justify-center font-spaceGrotesk md:hidden">
         <p className="font-[700] text-[23px] md:text-[25px] py-2">
           Survey Monkey Clone
@@ -43,7 +43,7 @@ const SingleProject = (props: Props) => {
           className="w-full h-full object-cover object-bottom"
         />
       </div>
-      <div className="w-full sm:w-[440px] md:w-[548px] h-[300px] md:h-[303px] flex flex-col gap-5 mt-4 md:mt-1">
+      <div className="w-full sm:w-[440px] md:w-[548px] h-fit md:h-[303px] flex flex-col gap-5 mt-4 md:mt-1">
         {/* Title section */}
         <div className="w-full font-spaceGrotesk hidden md:flex">
           <p className="font-[700] text-[23px] md:text-[25px]">

@@ -5,7 +5,7 @@ import SkillsSection from "@/components/SkillsSection";
 
 export default function Home() {
   return (
-    <main className="w-[100vw] min-h-[100vh] dark:bg-[#000000] m-auto flex justify-center items-center ">
+    <main className="w-[100vw] min-h-[100vh] dark:bg-[#000000] m-auto flex justify-center items-center">
       <section className="w-full min-h-[100vh] flex flex-col gap-[30px] items-center">
         <section className="section_common_padding max-w-[1600px]">
           <Navbar />
@@ -24,7 +24,7 @@ export default function Home() {
         </section>
         {/* Project section */}
         <section className="section_common_padding dark:bg-black light:bg-[#f9f9f9] ">
-          <div className="w-full max-w-[1600px] md:px-[44px]">
+          <div className="w-full max-w-[1600px] px-[10px] md:px-[44px]">
             <ProjectSection />
           </div>
         </section>
