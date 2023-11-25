@@ -17,7 +17,7 @@ const SocialLinks = (props: Props) => {
           className="w-[62px] md:w-[133px] h-[62px] md:h-[133px] absolute left-0 bottom-[-45%] md:top-[-30%]"
         />
         <p className="text-[14px] md:text-[25px] font-[400] text-center">
-          Say Hi ! or internet stalk him more or let's go <br /> somewhere
+          Say Hi ! or internet stalk him more or let&apos;s go <br /> somewhere
           together.
         </p>
       </div>
@@ -44,7 +44,7 @@ const SocialLinks = (props: Props) => {
             alt="insta logo"
             className="w-[43px] md:w-[104px] h-[43px] md:h-[104px]"
           />
-          <p className="text-[12px] md:text-[16px] font-[400]">Instagram</p>
+          <p className="text-[12px] md:text-[16px] font-[400]">LinkedIn</p>
         </a>
         <a
           href="#"
@@ -56,7 +56,7 @@ const SocialLinks = (props: Props) => {
             alt="insta logo"
             className="w-[43px] md:w-[90px] h-[43px] md:h-[90px]"
           />
-          <p className="text-[12px] md:text-[16px] font-[400]">Instagram</p>
+          <p className="text-[12px] md:text-[16px] font-[400]">Twitter</p>
         </a>
       </div>
     </div>
