@@ -20,6 +20,10 @@ body {
   font-family: 'IBM Plex Mono', monospace !important;
 }
 
+p{
+  user-select: none;
+}
+
 
 .clip_path_hidden {
   clip-path: circle(20px at 110% -10%);
