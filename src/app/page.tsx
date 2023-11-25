@@ -4,6 +4,7 @@ import HomeSection from "@/components/HomeSection";
 import Navbar from "@/components/Navbar";
 import ProjectSection from "@/components/ProjectSection";
 import SkillsSection from "@/components/SkillsSection";
+import StillHereTextSection from "@/components/StillHereTextSection";
 import dynamic from "next/dynamic";
 const GithubCalender = dynamic(() => import("@/components/GithubCalender"), {
   ssr: false,
@@ -45,6 +46,10 @@ export default function Home() {
         {/* Contact Us Section */}
         <section className="section_common_padding max-w-[1600px]">
           <ContactUsSection />
+        </section>
+        {/* Still here text Section */}
+        <section className="section_common_padding max-w-[1600px]">
+          <StillHereTextSection />
         </section>
       </section>
     </main>
