@@ -18,7 +18,7 @@ export default function Home() {
           <Navbar />
         </section>
         {/* Home Section */}
-        <section className="section_common_padding max-w-[1600px]">
+        <section className="section_common_padding max-w-[1600px]" id="__home">
           <HomeSection />
         </section>
         {/* Divider */}
@@ -26,17 +26,23 @@ export default function Home() {
           <div className="w-[85%] h-[1px] bg-[#777777]"></div>
         </div>
         {/* Skills */}
-        <section className="section_common_padding max-w-[1600px]">
+        <section
+          className="section_common_padding max-w-[1600px]"
+          id="__skills"
+        >
           <SkillsSection />
         </section>
         {/* Project section */}
-        <section className="section_common_padding dark:bg-black light:bg-[#f9f9f9] ">
+        <section
+          className="section_common_padding dark:bg-black light:bg-[#f9f9f9] "
+          id="__projects"
+        >
           <div className="w-full max-w-[1600px] px-[10px] md:px-[17px]">
             <ProjectSection />
           </div>
         </section>
         {/* Github Calender Section */}
-        <section className="section_common_padding max-w-[1600px]">
+        <section className="section_common_padding max-w-[1600px]" id="__stats">
           <GithubCalender />
         </section>
         {/* Github Stats Section */}
@@ -44,7 +50,10 @@ export default function Home() {
           <GithubStats />
         </section>
         {/* Contact Us Section */}
-        <section className="section_common_padding max-w-[1600px]">
+        <section
+          className="section_common_padding max-w-[1600px]"
+          id="__contacts"
+        >
           <ContactUsSection />
         </section>
         {/* Still here text Section */}

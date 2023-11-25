@@ -13,7 +13,7 @@ const Navbar = (props: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="w-full h-[55px] md:h-[70px] sticky top-[10px] z-40 rounded-[--section_br_radius] bg-[--nav_bg] dark:bg-[#1A1A1A] flex justify-between items-center px-[12px] md:px-[20px] lg:px-[30px] xl:px-[53px]">
-      <a href="#_home" className="hidden lg:flex">
+      <a href="#__home" className="hidden lg:flex">
         <Image
           src={HomeIcon}
           alt="Home Icon"
@@ -22,15 +22,19 @@ const Navbar = (props: Props) => {
           className=""
         />
       </a>
-      {["Skills", "Projects", "About", "Contact", "Resume/CV"].map(
-        (ele, ind) => (
-          <a key={ind} className="group hidden lg:flex" href="#_skills">
-            <p className="group text-[19px] font-[600] text-[#55505B] dark:text-white hover:scale-125 hover:text-[--theme_purple] hover:dark:text-[--theme_purple] transition-scale duration-300 transition-ease relative before:content-[''] before:absolute before:bottom-[-2px] before:height-[6px] before:w-[0] group-hover:before:w-full group-hover:before:border before:border-[--theme_purple] dark:before:border-white before:rounded-[50px] before:transition-width before:duration-[0.9s] before:transition-ease">
-              {ele}
-            </p>
-          </a>
-        )
-      )}
+      {[
+        { title: "Skills", url: "__skills" },
+        { title: "Projects", url: "__projects" },
+        { title: "Stats", url: "__stats" },
+        { title: "Contact", url: "__contacts" },
+        { title: "Resume/CV", url: "__resume" },
+      ].map((ele, ind) => (
+        <a key={ind} className="group hidden lg:flex" href={`#${ele.url}`}>
+          <p className="group text-[19px] font-[600] text-[#55505B] dark:text-white hover:scale-125 hover:text-[--theme_purple] hover:dark:text-[--theme_purple] transition-scale duration-300 transition-ease relative before:content-[''] before:absolute before:bottom-[-2px] before:height-[6px] before:w-[0] group-hover:before:w-full group-hover:before:border before:border-[--theme_purple] dark:before:border-white before:rounded-[50px] before:transition-width before:duration-[0.9s] before:transition-ease">
+            {ele.title}
+          </p>
+        </a>
+      ))}
       <ThemeSwither />
       <Image
         className="cursor-pointer lg:hidden"
