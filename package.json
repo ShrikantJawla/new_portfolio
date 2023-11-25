@@ -10,12 +10,13 @@
   },
   "dependencies": {
     "framer-motion": "^10.16.5",
-    "i": "^0.3.7",
     "next": "14.0.3",
     "next-theme": "^0.1.5",
     "npm": "^10.2.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-github-calendar": "^3.4.0",
+    "react-tooltip": "^4.4.3"
   },
   "devDependencies": {
     "@types/node": "^20",

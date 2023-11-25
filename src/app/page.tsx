@@ -1,7 +1,12 @@
+import GithubStats from "@/components/GithubStats";
 import HomeSection from "@/components/HomeSection";
 import Navbar from "@/components/Navbar";
 import ProjectSection from "@/components/ProjectSection";
 import SkillsSection from "@/components/SkillsSection";
+import dynamic from "next/dynamic";
+const GithubCalender = dynamic(() => import("@/components/GithubCalender"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
@@ -28,8 +33,18 @@ export default function Home() {
             <ProjectSection />
           </div>
         </section>
-        {/* Github Secion */}
-        <section></section>
+        {/* Github Calender Section */}
+        <section className="section_common_padding max-w-[1600px]">
+          <GithubCalender />
+        </section>
+        {/* Github Stats Section */}
+        <section className="section_common_padding max-w-[1600px]">
+          <GithubStats />
+        </section>
+        {/* Contact Us Section */}
+        <section className="section_common_padding max-w-[1600px]">
+          <GithubStats />
+        </section>
       </section>
     </main>
   );

@@ -36,11 +36,11 @@ const SingleProject = (props: Props) => {
           Survey Monkey Clone
         </p>
       </div>
-      <div className="w-full sm:w-[440px] md:w-[548px] h-[300px] md:h-[303px] project_section_gradient">
+      <div className="w-full sm:w-[440px] md:w-[548px] h-[300px] md:h-[303px] project_section_gradient border shadow-md border-gray-500 rounded-md">
         <Image
           src={projectImage}
           alt="project"
-          className="w-full h-full object-cover object-bottom"
+          className="w-full h-full object-cover object-bottom shadow-md rounded-md"
         />
       </div>
       <div className="w-full sm:w-[440px] md:w-[548px] h-fit md:h-[303px] flex flex-col gap-5 mt-4 md:mt-1">
