@@ -30,19 +30,10 @@ body {
   clip-path: circle(1200px at 110% -10%);
 }
 
-.scroll_div {
-  /* animation: scroll 4s linear infinite; */
+.abc{
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+   opacity: 0.3;
+    transform-style: preserve-3d;
 }
 
-.scroll_div:hover {
-  /* animation-play-state: paused; */
-}
-
-@keyframes scroll {
-  0%{
-    transform: translate(0);
-  }
-  100%{
-    transform:translate(calc(-56px*14))
-  }
-}
+.section_common_padding {@apply px-[16px] md:px-[40px] lg:px-[80px] xl:px-[140px] py-[10px] md:py-[24px] max-w-[1600px] w-full}

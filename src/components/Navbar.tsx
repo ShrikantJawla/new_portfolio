@@ -72,7 +72,7 @@ function SideBar({
         {["Home", "Skills", "Projects", "Stats", "AboutUs"].map(
           (ele, ind, arr) => (
             <div className="group w-full px-16 py-2 " key={ind}>
-              <p className="group text-4xl font-[700] text-white cursor-pointer relative before:content-[''] before:w-0  group-hover:before:border before:h-[4px] before:bg-white before-b-white before:absolute before:bottom-[-4px] before:transition-w before:duration-700 before:ease-in-out group-hover:before:w-full">
+              <p className="group text-3xl font-[600] text-white cursor-pointer relative before:content-[''] before:w-0  group-hover:before:border before:h-[4px] before:bg-white before-b-white before:absolute before:bottom-[-4px] before:transition-w before:duration-700 before:ease-in-out group-hover:before:w-full">
                 {ele}
               </p>
             </div>
