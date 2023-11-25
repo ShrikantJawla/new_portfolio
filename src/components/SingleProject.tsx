@@ -32,7 +32,7 @@ const SingleProject = (props: Props) => {
     >
       {/*Top Title section */}
       <div className="w-full flex justify-center font-spaceGrotesk md:hidden">
-        <p className="font-[700] text-[23px] md:text-[25px] py-2">
+        <p className="font-[700] text-[23px] md:text-[25px] py-1">
           Survey Monkey Clone
         </p>
       </div>

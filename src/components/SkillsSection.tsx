@@ -43,7 +43,7 @@ const SkillsSection = (props: Props) => {
   return (
     <div className="w-full min-h-fit pb-5">
       <HeaderSection title="SkillsSet" child={<SkillsBtns />} />
-      <div className="w-full min-h-[100px] grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 mt-8 gap-5 md:px-3">
+      <div className="w-full min-h-[100px] grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 mt-5 gap-5 md:px-3">
         {skilsArray.map((ele, ind) => (
           <div
             key={ind}

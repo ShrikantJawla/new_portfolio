@@ -13,7 +13,7 @@ const HeaderSection = (props: Props) => {
         </p>
         <Image src={arrowIcon} alt="Arrow Icon" className="h-[22px]" />
       </div>
-      {props.child ? props.child : null}
+      <div className="mt-5">{props.child ? props.child : null}</div>
     </div>
   );
 };

@@ -6,7 +6,7 @@ type Props = {};
 
 const GithubStats = (props: Props) => {
   return (
-    <div className="w-full min-h-[60vh] pb-5">
+    <div className="w-full h-fit pb-5">
       <HeaderSection title="Github Stats" />
       <div className="w-full flex flex-col mt-5">
         <div className="bg-[#0059B3] lg:h-[248px]">

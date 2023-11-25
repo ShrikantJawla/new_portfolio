@@ -1,3 +1,4 @@
+import ContactUsSection from "@/components/ContactUsSection";
 import GithubStats from "@/components/GithubStats";
 import HomeSection from "@/components/HomeSection";
 import Navbar from "@/components/Navbar";
@@ -29,7 +30,7 @@ export default function Home() {
         </section>
         {/* Project section */}
         <section className="section_common_padding dark:bg-black light:bg-[#f9f9f9] ">
-          <div className="w-full max-w-[1600px] px-[10px] md:px-[44px]">
+          <div className="w-full max-w-[1600px] px-[10px] md:px-[17px]">
             <ProjectSection />
           </div>
         </section>
@@ -43,7 +44,7 @@ export default function Home() {
         </section>
         {/* Contact Us Section */}
         <section className="section_common_padding max-w-[1600px]">
-          <GithubStats />
+          <ContactUsSection />
         </section>
       </section>
     </main>
