@@ -46,7 +46,7 @@ const ContactUsSection = (props: Props) => {
             alt="Illustration"
             width={191}
             height={191}
-            className="hidden lg:flex absolute bottom-0 right-0"
+            className="hidden lg:flex absolute bottom-0 right-[-10%]"
           />
         </div>
         <div className="w-full md:w-[670px] h-fit lg:h-[383px]">

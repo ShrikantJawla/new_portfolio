@@ -43,11 +43,11 @@ const SkillsSection = (props: Props) => {
   return (
     <div className="w-full min-h-fit pb-5">
       <HeaderSection title="SkillsSet" child={<SkillsBtns />} />
-      <div className="w-full min-h-[100px] grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 mt-5 gap-5 md:px-3">
+      <div className="w-full min-h-[100px] grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 mt-5 gap-4 md:px-3">
         {skilsArray.map((ele, ind) => (
           <div
             key={ind}
-            className="group flex justify-center items-center p-1 transition-all duration-500 ease-in-out cursor-pointer hover:scale-150 relative"
+            className="group flex justify-center items-center p-1 transition-all duration-500 ease-in-out cursor-pointer hover:scale-125 relative border h-[120px] rounded-lg"
           >
             <Image
               src={ele.image}
