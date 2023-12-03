@@ -13,13 +13,13 @@ const GithubCalender = dynamic(() => import("@/components/GithubCalender"), {
 
 export default function Home() {
   return (
-    <main className="w-[100vw] min-h-[100vh] dark:bg-[#000000] m-auto flex justify-center items-center">
+    <main className="w-[99vw] min-h-[100vh] dark:bg-[#000000] m-auto flex justify-center items-center">
       <section className="w-full min-h-[100vh] flex flex-col gap-[30px] items-center">
-        <section className="section_common_padding max-w-[1600px]">
+        <section className="section_common_padding max-w-[1600px] sticky top-[10px] z-[100]">
           <Navbar />
         </section>
         {/* Home Section */}
-        <section className="section_common_padding max-w-[1600px]" id="__home">
+        <section className="section_common_padding max-w-[1600px] " id="__home">
           <HomeSection />
         </section>
         {/* Divider */}

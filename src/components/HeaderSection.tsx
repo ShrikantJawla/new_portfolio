@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React from "react";
 import arrowIcon from "@/assets/Images/Arrow-1-1 1.png";
 import Image from "next/image";
 

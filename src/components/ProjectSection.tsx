@@ -8,7 +8,7 @@ const ProjectSection = (props: Props) => {
   return (
     <div className="w-full min-h-[60vh] pb-5">
       <HeaderSection title="Projects" />
-      <div className="w-full flex flex-col gap-[50px] lg:gap-[100px] mt-1 lg:mt-6">
+      <div className="w-full flex flex-col gap-[50px] lg:gap-[100px] mt-1 lg:mt-6 ">
         {new Array(5).fill(0).map((ele, ind) => (
           <SingleProject key={ind} isReverse={ind % 2 == 0 ? false : true} />
         ))}

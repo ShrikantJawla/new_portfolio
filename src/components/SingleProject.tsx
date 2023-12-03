@@ -27,7 +27,7 @@ const SingleProject = (props: Props) => {
       className={`w-full h-fit flex flex-col lg:flex-row ${
         props.isReverse ? "lg:flex-row-reverse" : "lg:flex-row"
       } gap-1 md:gap-16  ${
-        props.isReverse ? "lg:justify-end" : "lg:justify-start"
+        props.isReverse ? "lg:justify-center" : "lg:justify-center"
       } items-center dark:text-white`}
     >
       {/*Top Title section */}

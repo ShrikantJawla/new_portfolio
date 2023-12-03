@@ -47,7 +47,7 @@ const SkillsSection = (props: Props) => {
         {skilsArray.map((ele, ind) => (
           <div
             key={ind}
-            className="group flex justify-center items-center p-1 transition-all duration-500 ease-in-out cursor-pointer hover:scale-125 relative border h-[120px] rounded-lg"
+            className="group flex justify-center items-center p-1 transition-all duration-500 ease-in-out cursor-pointer hover:scale-125 relative dark:border-0 border h-[120px] rounded-lg"
           >
             <Image
               src={ele.image}

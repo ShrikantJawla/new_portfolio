@@ -20,7 +20,7 @@ type Props = {};
 const Navbar = (props: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="w-full h-[55px] md:h-[70px] sticky top-[10px] z-40 rounded-[--section_br_radius] bg-[--nav_bg] dark:bg-[#1A1A1A] flex justify-between items-center px-[12px] md:px-[20px] lg:px-[30px] xl:px-[53px]">
+    <div className="w-full h-[55px] md:h-[70px] rounded-[--section_br_radius] bg-[--nav_bg] dark:bg-[#1A1A1A] flex justify-between items-center px-[12px] md:px-[20px] lg:px-[30px] xl:px-[53px]">
       <a href="#__home" className="hidden lg:flex">
         <Image
           src={HomeIcon}
