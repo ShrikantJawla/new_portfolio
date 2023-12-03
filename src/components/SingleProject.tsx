@@ -14,9 +14,9 @@ const SingleProject = (props: Props) => {
         props.isReverse ? "lg:justify-center" : "lg:justify-center"
       } items-center dark:text-white`}
     >
-      {/*Top Title section */}
+      {/*Top Title section visible only in mobile screens */}
       <div className="w-full flex justify-center font-spaceGrotesk md:hidden">
-        <p className="font-[700] text-[23px] md:text-[25px] py-1">{"title"}</p>
+        <p className="font-[700] text-[23px] md:text-[25px] py-1">{title}</p>
       </div>
       <div className="w-full sm:w-[440px] md:w-[548px] h-[300px] md:h-[303px] project_section_gradient border shadow-md border-gray-500 rounded-md">
         {/* <Image
@@ -31,7 +31,7 @@ const SingleProject = (props: Props) => {
         />
       </div>
       <div className="w-full sm:w-[440px] md:w-[548px] h-fit md:h-[303px] flex flex-col gap-5 mt-4 md:mt-1">
-        {/* Title section */}
+        {/* Title section visible in tablet and desktop screens*/}
         <div className="w-full font-spaceGrotesk hidden md:flex">
           <p className="font-[700] text-[23px] md:text-[25px]">{title}</p>
         </div>

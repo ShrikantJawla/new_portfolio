@@ -19,7 +19,7 @@ const CustomInput = ({ label, name, value, handleChange, type }: Props) => {
         name={name}
         value={value}
         onChange={handleChange}
-        className="w-full border rounded-md h-[40px] px-2"
+        className="w-full border rounded-md h-[40px] px-2 dark:bg-inherit"
         required
       />
     </>

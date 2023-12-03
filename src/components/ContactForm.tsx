@@ -80,7 +80,7 @@ const ContactForm = (props: Props) => {
           <textarea
             name="subject"
             rows={2}
-            className="w-full border rounded-md p-2"
+            className="w-full border rounded-md p-2 dark:bg-inherit"
             onChange={handleChange}
             value={inputs.subject}
           ></textarea>
@@ -92,7 +92,7 @@ const ContactForm = (props: Props) => {
           <textarea
             name="message"
             rows={5}
-            className="w-full border rounded-md p-2"
+            className="w-full border rounded-md p-2 dark:bg-inherit"
             onChange={handleChange}
             value={inputs.message}
           ></textarea>

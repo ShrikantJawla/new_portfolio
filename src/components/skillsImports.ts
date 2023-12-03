@@ -14,6 +14,9 @@ import firebase from "@/assets/Images/skills/firebase.png";
 import tailwind from "@/assets/Images/skills/tailwind.png";
 import styled from "@/assets/Images/skills/styledcomp.png";
 import postgresql from '@/assets/Images/skills/postgresql.svg'
+import github from '@/assets/Images/skills/github.svg'
+import chakraui from '@/assets/Images/skills/chakraui.svg'
+import nestjs from '@/assets/Images/skills/nestjs.svg'
 
 export {
   html,
@@ -32,4 +35,7 @@ export {
   tailwind,
   styled,
   postgresql,
+  github,
+  chakraui,
+  nestjs,
 };
