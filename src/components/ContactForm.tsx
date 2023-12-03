@@ -38,9 +38,9 @@ const ContactForm = (props: Props) => {
         "https://orange-red-giraffe-slip.cyclic.app/mail/sendEmail",
         inputs
       );
-      console.log(resAfterSendingEmail);
+      // console.log(resAfterSendingEmail);
       setInputs(initialInputsData);
-      setIsToastOpen(true)
+      setIsToastOpen(true);
     } catch (error) {
       console.log(error);
     } finally {

@@ -18,11 +18,11 @@ const Toast = (props: Props) => {
   }, [isToastOpen]);
   return (
     <div
-      className="max-w-lg fixed bottom-5 right-5 z-[130] bg-green-400 text-sm text-white rounded-xl shadow-lg"
+      className="min-w-[320px] md:max-w-lg fixed bottom-0 md:bottom-5 right-[50%] translate-x-[50%] md:translate-x-[0%] md:right-5 z-[130] bg-green-400 text-sm text-white rounded-xl shadow-lg"
       role="alert"
     >
-      <div className="flex p-4 text-[16px] font-[500]">
-        Hello, There! <br /> ThankYou! <br /> I have received your Email and
+      <div className="flex p-4 text-[13px] md:text-[16px] font-[500]">
+        ThankYou! <br /> I have received your Email and
         contact you soon!.
         <div className="ms-auto" onClick={() => setIsToastOpen(false)}>
           <button
