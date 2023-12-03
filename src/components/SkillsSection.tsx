@@ -41,7 +41,7 @@ let skillsArray: ISkillsArrays[] = [
   { title: "TS", image: ts, skillType: ["all", "frontend"] },
   { title: "Nextjs", image: nextjs, skillType: ["all", "frontend"] },
   { title: "Nodejs", image: nodejs, skillType: ["all", "backend"] },
-  { title: "Expressjs", image: express, skillType: ["all", "backend",] },
+  { title: "Expressjs", image: express, skillType: ["all", "backend"] },
   {
     title: "Framer\nMotion",
     image: framerMotion,
@@ -86,7 +86,7 @@ const SkillsSection = (props: Props) => {
                 <Image
                   src={ele.image}
                   alt={ele.title}
-                  className="group-hover:blur-[2px]"
+                  className="group-hover:blur-[2px] w-[45px] h-[45px] md:w-[60px] md:h-[60px]"
                   width={60}
                   height={60}
                 />

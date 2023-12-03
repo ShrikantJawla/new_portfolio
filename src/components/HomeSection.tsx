@@ -22,7 +22,7 @@ const HomeSection = (props: Props) => {
         />
       </div>
       {/* Text section */}
-      <div className="h-[310px] md:h-[418px] sm:w-[500px] md:w-[500px] lg:w-[520px] flex flex-col justify-center items-center md:items-start ">
+      <div className="h-[340px] md:h-[435px] sm:w-[500px] md:w-[500px] lg:w-[520px] flex flex-col justify-center items-center md:items-start ">
         <p className="font-spaceGrotesk font-500 text-[15px] md:text-[22px] text-[#FFFFFF] px-[100px]">
           Hi, I am
         </p>
