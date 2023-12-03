@@ -87,7 +87,7 @@ export const projects: IProjects[] = [
     ],
     btns: {
       githubUrl: "",
-      liveUrl: "https://lounges.cardinsider.com/",
+      liveUrl: "https://finpaisa.in",
     },
   },
 ];
