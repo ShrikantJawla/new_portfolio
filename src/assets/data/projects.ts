@@ -40,7 +40,7 @@ export const projects: IProjects[] = [
       },
       {
         title: "PostgreSQL",
-        img: "https://raw.githubusercontent.com/ShrikantJawla/portfolio_images/main/skills/html.png",
+        img: "https://raw.githubusercontent.com/ShrikantJawla/portfolio_images/main/skills/postgresql.svg",
       },
     ],
     btns: {
@@ -82,7 +82,7 @@ export const projects: IProjects[] = [
       },
       {
         title: "PostgreSQL",
-        img: "https://raw.githubusercontent.com/ShrikantJawla/portfolio_images/main/skills/html.png",
+        img: "https://raw.githubusercontent.com/ShrikantJawla/portfolio_images/main/skills/postgresql.svg",
       },
     ],
     btns: {

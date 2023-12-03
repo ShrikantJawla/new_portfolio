@@ -17,24 +17,31 @@ import {
   firebase,
   tailwind,
   styled,
+  postgresql,
 } from "@/components/skillsImports";
 import Image from "next/image";
 
 let skilsArray = [
-  { title: "HTML", image: html },
-  { title: "CSS", image: css },
-  { title: "JS", image: js },
-  { title: "React", image: react },
-  { title: "Redux", image: redux },
-  { title: "TS", image: ts },
-  { title: "Nextjs", image: nextjs },
-  { title: "Nodejs", image: nodejs },
-  { title: "Expressjs", image: express },
-  { title: "Framer\nMotion", image: framerMotion, figma },
-  { title: "MongoDB", image: mongodb },
-  { title: "Firebase", image: firebase },
-  { title: "Style\nComponent", image: styled },
-  { title: "Tailwindcss", image: tailwind },
+  { title: "HTML", image: html, skillType: ["all", "frontend"] },
+  { title: "CSS", image: css, skillType: ["all", "frontend"] },
+  { title: "JS", image: js, skillType: ["all", "frontend"] },
+  { title: "React", image: react, skillType: ["all", "frontend"] },
+  { title: "Redux", image: redux, skillType: ["all", "frontend"] },
+  { title: "TS", image: ts, skillType: ["all", "frontend"] },
+  { title: "Nextjs", image: nextjs, skillType: ["all", "frontend"] },
+  { title: "Nodejs", image: nodejs, skillType: ["all", "backend"] },
+  { title: "Expressjs", image: express, skillType: ["all", "backend"] },
+  {
+    title: "Framer\nMotion",
+    image: framerMotion,
+    figma,
+    skillType: ["all", "frontend"],
+  },
+  { title: "MongoDB", image: mongodb, skillType: ["all", "backend"] },
+  { title: "Firebase", image: firebase, skillType: ["all", "frontend"] },
+  { title: "Style\nComponent", image: styled, skillType: ["all", "frontend"] },
+  { title: "Tailwindcss", image: tailwind, skillType: ["all", "frontend"] },
+  { title: "PostgreSQL", image: postgresql, skillType: ["all", "backend"] },
 ];
 
 type Props = {};
@@ -53,6 +60,8 @@ const SkillsSection = (props: Props) => {
               src={ele.image}
               alt={ele.title}
               className="group-hover:blur-[2px]"
+              width={60}
+              height={60}
             />
             <p className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] transition-all duration-500 ease-in-out hidden group-hover:flex text-[14px] md:text-[19px] font-bold text-center dark:text-white">
               {ele.title}

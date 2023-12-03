@@ -13,6 +13,7 @@ import mongodb from "@/assets/Images/skills/mongodb.png";
 import firebase from "@/assets/Images/skills/firebase.png";
 import tailwind from "@/assets/Images/skills/tailwind.png";
 import styled from "@/assets/Images/skills/styledcomp.png";
+import postgresql from '@/assets/Images/skills/postgresql.svg'
 
 export {
   html,
@@ -30,4 +31,5 @@ export {
   firebase,
   tailwind,
   styled,
+  postgresql,
 };
