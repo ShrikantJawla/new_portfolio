@@ -41,12 +41,13 @@ const HomeSection = (props: Props) => {
         </div>
         <div className="flex mt-2 gap-2 w-full md:w-[400px] lg:w-[520px] xl:w-full text-center md:text-left">
           <h2 className="font-400 text-[12px] lg:text-[16px] leading-[15px] lg:leading-[20px] text-white">
-            <span className="inline-flex lg:h-[22px] justify-center items-center mr-1 relative top-[-5px]">
+            <span className="inline-flex lg:h-[9px] justify-center items-center mr-1 relative top-[-5px]">
               <p className="w-[35px] h-[0.8px] bg-white"></p>
             </span>
-            Eager Full Stack Web Developer skilled in Next JS React, Redux,
-            HTML, CSS, Node JS, and Express JS. Passionate about problem-solving
-            and user-centered design.
+            Aspiring Full Stack Web Developer equipped with skills like NextJS,
+            React, Redux, HTML, and CSS, Nodejs, Expressjs, Nestjs, MongoDb,
+            PostgreSQL.A team player and intensely interested in obtaining a Web
+            developer position to work on enhancing the product experience.
           </h2>
         </div>
         <div className="w-full md:w-[400px] lg:w-[604px] mt-[25px]">
@@ -60,7 +61,7 @@ const HomeSection = (props: Props) => {
               className="mt-1 md:mt-0 w-[17px] md:w-[24px]"
             />
             <p className="font-400 text-[12px] lg:text-[16px] leading-[21px] text-white">
-              Full Stack Web Developer for 1+ yrs
+              Full Stack Web Developer for 2+ yrs
             </p>
           </div>
           <div className="flex justify-start items-start gap-2 lg:mt-1 ml-1 relative left-[-3.5px]">
@@ -70,7 +71,14 @@ const HomeSection = (props: Props) => {
               className="mt-1 md:mt-0 w-[14px] md:w-[24px]"
             />
             <p className="font-400 text-[12px] lg:text-[16px] leading-[21px] text-white">
-              Currently developing @Card Insider
+              Currently working on{" "}
+              <a
+                href="https://lounges.cardinsider.com/"
+                target="_blank"
+                className="hover:underline"
+              >
+                Card Insider
+              </a>
             </p>
           </div>
         </div>

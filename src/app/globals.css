@@ -35,10 +35,6 @@ p{
   /* display: flex; */
 }
 
-.abc{
-background: linear-gradient(179.52deg, rgba(120, 46, 204, 0) 4.5%, #c4bdcb 99.55%);
-}
-
 .section_common_padding {@apply px-[16px] md:px-[40px] lg:px-[80px] xl:px-[140px] py-[5px] md:py-[24px] w-full}
 
 .project_section_gradient {

@@ -31,7 +31,16 @@ const Navbar = (props: Props) => {
         />
       </a>
       {links.map((ele, ind) => (
-        <a key={ind} className="group hidden lg:flex" href={`#${ele.url}`}>
+        <a
+          key={ind}
+          className="group hidden lg:flex"
+          href={
+            ele.title == "Resume/CV"
+              ? "https://github.com/ShrikantJawla/Resume/raw/main/Shrikant_Jawla_Resume.pdf"
+              : `#${ele.url}`
+          }
+          download={ele.title == "Resume/CV" && "Shrikant_Jawla_resume"}
+        >
           <p className="group text-[19px] font-[600] text-[#55505B] dark:text-white hover:scale-125 hover:text-[--theme_purple] hover:dark:text-[--theme_purple] transition-scale duration-300 transition-ease relative before:content-[''] before:absolute before:bottom-[-2px] before:height-[6px] before:w-[0] group-hover:before:w-full group-hover:before:border before:border-[--theme_purple] dark:before:border-white before:rounded-[50px] before:transition-width before:duration-[0.9s] before:transition-ease">
             {ele.title}
           </p>
@@ -77,7 +86,7 @@ function SideBar({
       <div className="flex flex-col gap-4 mt-5">
         {links.map((ele, ind, arr) => (
           <div className="group w-full px-16 py-2 " key={ind}>
-            <a href={`#${ele.url}`}>
+            <a href={`#${ele.url}`} onClick={() => setIsOpen(false)}>
               <p className="group text-3xl font-[600] text-white cursor-pointer relative before:content-[''] before:w-0  group-hover:before:border before:h-[4px] before:bg-white before-b-white before:absolute before:bottom-[-4px] before:transition-w before:duration-700 before:ease-in-out group-hover:before:w-full">
                 {ele.title}
               </p>
