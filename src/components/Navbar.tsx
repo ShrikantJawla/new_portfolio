@@ -2,10 +2,10 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
-import HomeIcon from "@/assets/Images/home-svgrepo-com 1.png";
 import HamBurgerIcon from "@/assets/Images/icons8-hamburger.svg";
 import ThemeSwither from "./ThemeSwither";
 import closeIcon from "@/assets/Images/icons8-close.svg";
+import myLogo from "@/assets/Images/logo.png";
 
 const links = [
   { title: "Skills", url: "__skills" },
@@ -21,9 +21,9 @@ const Navbar = (props: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="w-full h-[55px] md:h-[70px] rounded-[--section_br_radius] bg-[--nav_bg] dark:bg-[#1A1A1A] flex justify-between items-center px-[12px] md:px-[20px] lg:px-[30px] xl:px-[53px]">
-      <a href="#__home" className="hidden lg:flex">
+      <a href="#__home" className="">
         <Image
-          src={HomeIcon}
+          src={myLogo}
           alt="Home Icon"
           height={35}
           width={35}
