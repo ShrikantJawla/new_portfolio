@@ -1,16 +1,30 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
-type Props = {};
+type Props = { setIsToastOpen: Function; isToastOpen: boolean };
 
 const Toast = (props: Props) => {
+  const { setIsToastOpen, isToastOpen } = props;
+  const timerId: { current: NodeJS.Timeout | null } = useRef(null);
+
+  useEffect(() => {
+    if (isToastOpen) {
+      timerId.current = setTimeout(() => {
+        setIsToastOpen(false);
+      }, 4000);
+      return () => {
+        clearTimeout(timerId.current as NodeJS.Timeout);
+      };
+    }
+  }, [isToastOpen]);
   return (
     <div
       className="max-w-lg fixed bottom-5 right-5 z-[130] bg-green-400 text-sm text-white rounded-xl shadow-lg"
       role="alert"
     >
       <div className="flex p-4 text-[16px] font-[500]">
-        Hello, There! <br /> ThankYou! <br /> I have received Email and contact you soon!.
-        <div className="ms-auto">
+        Hello, There! <br /> ThankYou! <br /> I have received your Email and
+        contact you soon!.
+        <div className="ms-auto" onClick={() => setIsToastOpen(false)}>
           <button
             type="button"
             className="inline-flex flex-shrink-0 justify-center items-center h-5 w-5 rounded-lg text-white hover:text-white opacity-50 hover:opacity-100 focus:outline-none focus:opacity-100"

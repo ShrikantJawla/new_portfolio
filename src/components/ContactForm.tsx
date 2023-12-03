@@ -1,6 +1,6 @@
 "use client";
 
-import React, { FormEvent, useState } from "react";
+import React, { FormEvent, useEffect, useState } from "react";
 import CustomInput from "./CustomInput";
 import axios from "axios";
 import Toast from "./Toast";
@@ -24,6 +24,7 @@ type Props = {};
 const ContactForm = (props: Props) => {
   const [inputs, setInputs] = useState<IInputsData>(initialInputsData);
   const [sendMailLoading, setSendMailLoading] = useState(false);
+  const [isToastOpen, setIsToastOpen] = useState(false);
   const handleChange = (event: any) => {
     const { name, value } = event.target;
     setInputs({ ...inputs, [name]: value });
@@ -38,7 +39,8 @@ const ContactForm = (props: Props) => {
         inputs
       );
       console.log(resAfterSendingEmail);
-      setInputs(initialInputsData)
+      setInputs(initialInputsData);
+      setIsToastOpen(true)
     } catch (error) {
       console.log(error);
     } finally {
@@ -47,7 +49,9 @@ const ContactForm = (props: Props) => {
   };
   return (
     <>
-      <Toast/>
+      {isToastOpen && (
+        <Toast setIsToastOpen={setIsToastOpen} isToastOpen={isToastOpen} />
+      )}
       <form onSubmit={handleSubmit} className="w-full flex flex-col gap-5">
         <div className="w-full flex flex-col md:flex-row gap-3">
           <div className="flex flex-col w-full md:w-1/2 gap-1">
