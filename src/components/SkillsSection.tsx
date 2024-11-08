@@ -42,20 +42,20 @@ let skillsArray: ISkillsArrays[] = [
   { title: "Nextjs", image: nextjs, skillType: ["all", "frontend"] },
   { title: "Nodejs", image: nodejs, skillType: ["all", "backend"] },
   { title: "Expressjs", image: express, skillType: ["all", "backend"] },
-  {
-    title: "Framer\nMotion",
-    image: framerMotion,
-    skillType: ["all", "frontend"],
-  },
   { title: "Figma", image: figma, skillType: ["all", "ui-ux"] },
   { title: "MongoDB", image: mongodb, skillType: ["all", "backend"] },
   { title: "Firebase", image: firebase, skillType: ["all", "frontend"] },
-  { title: "Style\nComponent", image: styled, skillType: ["all", "frontend"] },
-  { title: "Tailwindcss", image: tailwind, skillType: ["all", "frontend"] },
+  // { title: "Style\nComponent", image: styled, skillType: ["all", "frontend"] },
+  { title: "Tailwind\ncss", image: tailwind, skillType: ["all", "frontend"] },
   { title: "PostgreSQL", image: postgresql, skillType: ["all", "backend"] },
   { title: "Github", image: github, skillType: ["all", "version Control"] },
-  { title: "Chakraui", image: chakraui, skillType: ["all", "frontend"] },
-  { title: "Nestjs", image: nestjs, skillType: ["all", "backend"] },
+  // { title: "Chakraui", image: chakraui, skillType: ["all", "frontend"] },
+  // { title: "Nestjs", image: nestjs, skillType: ["all", "backend"] },
+  // {
+  //   title: "Framer\nMotion",
+  //   image: framerMotion,
+  //   skillType: ["all", "frontend"],
+  // },
 ];
 
 type Props = {};
@@ -81,14 +81,14 @@ const SkillsSection = (props: Props) => {
             ele.skillType.includes(selectedType) && (
               <div
                 key={ind}
-                className="group flex justify-center items-center p-1 transition-all duration-500 ease-in-out cursor-pointer hover:scale-125 relative border h-[120px] rounded-lg"
+                className="group flex justify-center items-center p-1 transition-all duration-500 ease-in-out cursor-pointer hover:scale-125 relative border h-[120px] rounded-lg justify-item-center"
               >
                 <Image
                   src={ele.image}
                   alt={ele.title}
                   className="group-hover:blur-[2px] w-[45px] h-[45px] md:w-[60px] md:h-[60px]"
-                  width={60}
-                  height={60}
+                  width={30}
+                  height={30}
                 />
                 <p className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] transition-all duration-500 ease-in-out hidden group-hover:flex text-[14px] md:text-[19px] font-bold text-center dark:text-white">
                   {ele.title}
