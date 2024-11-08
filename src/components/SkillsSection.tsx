@@ -75,20 +75,20 @@ const SkillsSection = (props: Props) => {
           />
         }
       />
-      <div className="w-full min-h-[100px] grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 mt-5 gap-4 md:px-3">
+      <div className="w-full min-h-[100px] grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 mt-5 gap-4 md:px-3 ">
         {skillsArray.map(
           (ele, ind) =>
             ele.skillType.includes(selectedType) && (
               <div
                 key={ind}
-                className="group flex justify-center items-center p-1 transition-all duration-500 ease-in-out cursor-pointer hover:scale-125 relative border h-[120px] rounded-lg justify-item-center"
+                className="group flex justify-center items-center p-1 transition-all duration-500 ease-in-out cursor-pointer hover:scale-125 relative border h-[120px] w-[100px] rounded-lg"
               >
                 <Image
                   src={ele.image}
                   alt={ele.title}
-                  className="group-hover:blur-[2px] w-[45px] h-[45px] md:w-[60px] md:h-[60px]"
-                  width={30}
-                  height={30}
+                  className="group-hover:blur-[2px] w-[40px] h-[40px] md:w-[40px] md:h-[40px]"
+                  width={40}
+                  height={40}
                 />
                 <p className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] transition-all duration-500 ease-in-out hidden group-hover:flex text-[14px] md:text-[19px] font-bold text-center dark:text-white">
                   {ele.title}
